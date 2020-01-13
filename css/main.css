@@ -1,0 +1,270 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #222222;
+}
+
+div {
+	box-sizing: border-box;
+	/*!!!при выходе контента за блок, контент сжимаеться*/
+}
+
+/*******************************************
+*******************Header*****************
+*******************************************/
+header {
+	background: url(../img/first-bg.jpg) no-repeat center top / cover;
+	/*не дублирует картинку. cover растягивает на весь экран*/
+	padding-bottom: 200px;
+	/*отступ вниз от последнего элемента, у нас button*/
+	height: 100vh;
+	/*значение 100vh устанавливает 1 секцию на всю страницу устройства*/
+}
+
+.container {
+	width: 930px;
+	/*всему нашему контенту задаем ширину 930px, за эти рамки выходят только картинки в нашем случае*/
+	margin: 0 auto;
+	/*выравниваем весь контент по центру*/
+}
+
+.logo {
+	margin-top: 41px;
+}
+
+nav {
+	float: right;
+	/*переносим наше меню вправо*/
+	margin-top: 35px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+	/*отступ между пунктами навигации в меню*/
+}
+
+.menu li a {
+	color: #ffffff;
+	text-decoration: none;
+	/*убираем подчеркивания у ссылок*/
+	text-transform: uppercase;
+	/*переводим наше меню в верхний регистр*/
+	font-size: 14px;
+}
+
+.menu li a:hover {
+	border: 1px solid #fed136;
+	border-radius: 5px;
+	color: #fed136;
+	text-decoration: none;
+	/*убираем подчеркивания у ссылок*/
+	text-transform: uppercase;
+	/*переводим наше меню в верхний регистр*/
+	font-size: 14px;
+}
+
+.titles__first {
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	/*верхний регстр*/
+	text-align: center;
+	margin-top: 310px;
+}
+
+h1 {
+	font-size: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	/*верхний регстр*/
+	text-align: center;
+	margin-top: 50px;
+}
+
+.button {
+	background: #fed136;
+	color: #796941;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	/*центруем текств в кнопке за счет падингов*/
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	/*верхний регстр*/
+	font-weight: bold;
+	/*жирный текст*/
+	font-size: 18px;
+	/*margin-bottom: 160px;*/
+}
+
+.button:hover {
+	background: #273ec7;
+	color: #796941;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	/*центруем текств в кнопке за счет падингов*/
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	/*верхний регстр*/
+	font-weight: bold;
+	/*жирный текст*/
+	font-size: 18px;
+	/*margin-bottom: 160px;*/
+}
+
+/*******************************************
+*******************Header*****************
+*******************************************/
+.title {
+	padding-top: 115px;
+
+}
+
+/*Так как все заголовки одинаковые для всех сразу мы пнимем одинаковые стили*/
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	/*верхний регистр*/
+	margin: 0;
+}
+
+.title p {
+	color: #777777;
+	text-align: center;
+	font-size: 16px;
+	margin: 5;
+}
+
+.services {
+	margin-top: 50px;
+}
+
+#services {
+	padding-bottom: 320px;
+}
+
+.services-item {
+	width: 270px;
+	/*делаем ширину столбцов */
+	float: left;
+	text-align: center;
+}
+
+.services-item h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.services-item p {
+	color: #777777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+
+/*тут просто выравнивание иконок*/
+.services-item:last-child {
+	float: right;
+}
+
+.services-item:nth-child(2) {
+	margin-left: 60px;
+}
+
+/*******************************************
+*******************2 Section****************
+********************************************/
+#portfolio {
+	background: #f7f7f7;
+	padding-bottom: 450px;
+}
+
+.works {
+	margin-top: 70px;
+
+}
+
+.works img {
+	float: left;
+}
+
+.works img:nth-child(2) {
+	margin-left: 29px;
+}
+
+.works img:last-child {
+	float: right;
+}
+
+/*******************************************
+*******************2 Section****************
+********************************************/
+
+/*******************************************
+*******************3 Section****************
+********************************************/
+.abouthead {
+	margin-bottom: 80px;
+}
+
+.about-main {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.about-box {
+	width: 350px;
+	display: inline-block;
+}
+
+.about-box img {
+	align-items: center;
+}
+
+.about-box p {
+	color: #777777;
+	text-align: center;
+	font-size: 14px;
+
+}
+
+.about-box h2 {
+	font-size: 18px;
+	margin: 3px;
+}
+
+
+
+
+/*******************************************
+*******************Footer****************
+********************************************/
+footer {
+	display: block;
+	background: #3f4049;
+	height: 150px;
+}
+
+footer p {
+	padding-top: 70px;
+	color: white;
+	text-align: center;
+}
